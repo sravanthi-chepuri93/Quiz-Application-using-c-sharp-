@@ -1,38 +1,8 @@
 ﻿// See https://aka.ms/new-console-template for more information
+using QuizApplication;
 using System.Diagnostics;
 
-class Question
-{
-    public string QuestionText { get; }
-    public string Answer { get; }
-    public double percentageScore;
-
-    public Question(string questionText, string answer)
-    {
-        QuestionText = questionText;
-        Answer = answer;
-    }
-    public Question()
-    {
-    }
-    public string percent(double percentageScore)
-    {
-        if (percentageScore > 90 && percentageScore <= 100)
-        {
-            return "you have passed with distinction";
-        }
-        else if (percentageScore > 75 && percentageScore <= 90)
-        {
-            return "you have passed";
-        }
-        else
-        {
-            return "Sorry, you have failed";
-        }
-    }
-}
-
-class QuizApplication
+public class QuizApp
 {
     static void Main(string[] args)
     {
